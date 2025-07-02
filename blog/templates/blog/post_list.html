@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,11 +7,12 @@
         <title>Blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex nobis dignissimos quisquam a earum accusamus dolorum aspernatur quas blanditiis, architecto laudantium aliquid nulla minus rem quae. Corrupti sit consequatur assumenda.</p>
-        <h1 style="color: #cc2255; text-align: center;">Selva!</h1>
-        <p style="color: #cc2255; text-align: center;">Bem vindo!</p>
+        <h1>Selva!</h1>
+        <p>Bem vindo!</p>
         <h2><a href="">Meu primeiro post</a></h2>
         <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         {{ posts }}
