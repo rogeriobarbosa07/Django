@@ -11,17 +11,27 @@
     </head>
     <body>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex nobis dignissimos quisquam a earum accusamus dolorum aspernatur quas blanditiis, architecto laudantium aliquid nulla minus rem quae. Corrupti sit consequatur assumenda.</p>
-        <h1>Selva!</h1>
-        <p>Bem vindo!</p>
+        <div class="page-header">
+            <h1>Site em Django</h1>
+        </div>
+        <!--<p>Bem vindo!</p>
         <h2><a href="">Meu primeiro post</a></h2>
         <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        {{ posts }}
-        {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
-                <h2><a href="">{{ post.title }}</a></h2>
-                <p>{{ post.text|linebreaksbr }}</p>
+        {{ posts }} -->
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% for post in posts %}
+                        <div class="post">
+                            <div class="date">
+                                <p>published: {{ post.published_date }}</p>
+                            </div>
+                            <h2><a href="">{{ post.title }}</a></h2>
+                            <p>{{ post.text|linebreaksbr }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
-        {% endfor %}
+        </div>
     </body>
 </html>
