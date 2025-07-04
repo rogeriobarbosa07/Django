@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
 # Create your views here.
+
+def post_list(request):
+    return render(request, 'appteste/post_list.html', {}) # Template que ainda será criado
