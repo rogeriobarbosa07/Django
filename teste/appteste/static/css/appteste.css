@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+}
+
+.todo {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.todo * {
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
