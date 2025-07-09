@@ -1,5 +1,10 @@
-<form action="/your-name/" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit">
-</form>
+{% extends 'appteste/base.html' %}
+
+{% block content2 %}
+    <form action="/tarefa/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="text">
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
