@@ -7,7 +7,7 @@ from .forms import TodoForm # importando do arquivo .py dos forms
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date') 
-    return render(request, 'appteste/post_list.html', {'posts': posts})
+    return render(request, 'appteste/todo_list.html', {'posts': posts})
 
 def get_tarefa(request):
     # if this is a POST request we need to process the form data
