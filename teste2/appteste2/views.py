@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def viewteste(request):
     return HttpResponse("Testando view")
+
+def viewteste2(request):
+    return HttpResponse("Testando view (2)")
