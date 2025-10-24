@@ -23,4 +23,4 @@ Estou utilizando como referência o excelente tutorial oferecido pelo **Django G
 Você pode clonar este repositório para acompanhar os projetos desenvolvidos e os códigos de exemplo:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/<seu-usuario>/Django.git
